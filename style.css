@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+section header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+section header ul li{
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #111;
+}
+section header ul li a button{
+    background-color: #4584EF;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.main{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .search-box{
+ position: relative;
+ width: 100%;
+ margin-top: 30px;   
+}
+.main .search-box input{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #CCCCCC;
+    border-radius: 28px;
+    outline:0;
+    font-size: 16px;
+    padding-left: 60px;
+}
+.main .search-box .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 14px 30px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    cursor: pointer;
+}
+.main .search-box .button{
+    margin-top: 30px;
+    text-align: center;
+}
+.main .search-box .button button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.main .search-box .button button:hover{
+    border: 1px solid #ccc;
+}
+.main .lang{
+    text-align: center;
+    margin-top: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+footer .fl{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E6E6E6;
+}
+footer .fl ul{
+    display: flex;
+    padding: 10px 20px;
+}
+footer .fl ul li{
+    list-style-type: none;
+}
+footer .fl ul li a{
+    text-decoration: none;
+    color: #5F6368;
+    margin-right: 25px ;
+    font-size: 14px;
+}
+@media(max-width:700px){
+    .main .search-box input{
+        width: 90%;}
+        .main .search-box .icons{
+            width: 90%;
+        }
+        footer .fl ul{
+            display: block;
+        }
+    }
+}
